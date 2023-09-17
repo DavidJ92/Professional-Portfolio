@@ -58,14 +58,9 @@ main h2 {
     background-image: url(/assets/images/codioful-formerly-gradienta.jpg);
 }
 
-h3 {
-    font-size: 30px;
-    color:var(--black);
-    text-align: center; 
-    margin: 1px;
-    
-}
 
+
+    
 section {
     padding: 20px;
 }
@@ -81,7 +76,14 @@ section h2 {
     background-image: url(/assets/images/-unsplash.jpg);
 }
 
-p{
+h3 {
+    font-size: 30px;
+    color:var(--black);
+    text-align: center; 
+    margin: 1px;
+}
+
+p {
     font-size: 20px;
     margin-bottom: 0%;
     margin-top: 0%;
@@ -124,7 +126,28 @@ p{
 .imgapp1:hover {
     transform:translate(-10px);
     transition: .5s;
-    }
+}
+
+.imgapp2{
+    width: 25%;
+    float: right;
+    border-radius: 50%;
+    border: 3px solid var(--white);
+    margin-right: 20px;
+    transition: color 1.0s;
+    /*transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    trasition:transform: 0.5s;*/
+ }
+
+ footer h4 {
+    font-size: 20px;
+    color: var(--black);
+    text-align: center; 
+    margin: 1px;
+ }
         
 /* Responsive design */
 @media screen and (max-width: 768px) {
