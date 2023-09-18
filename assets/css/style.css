@@ -23,7 +23,8 @@ header {
     background-color: #010000c2;
     color: var(--white);
     padding: 20px 12px;
-    background-image: url(/assets/images/codioful-formerly-gradienta-m_7p45JfXQo-unsplash.jpg);
+    background-color: navy;
+    background-image: url(/assets/images/pngtree-dark-blue-beam-matte-upscale-gradient-background-bluebeamscrubhigh-gradegradientbackgroundexhibition-board-image_86513.jpg);
 }
 
 header li a {
@@ -54,8 +55,9 @@ main h2 {
     font-size: 30px;
     color: var(--tittles);
     text-align: center; 
-    margin: 1px;
-    background-image: url(/assets/images/codioful-formerly-gradienta-m_7p45JfXQo-unsplash.jpg);
+    margin: 0px;
+    background-color: skyblue;
+    
 }
 
 
@@ -73,7 +75,8 @@ section h2 {
     text-align: center; 
     margin-right: 20px;
     margin-left: 20px;
-    background-image: url(/assets/images/codioful-formerly-gradienta-bKESVqfxass-unsplash.jpg);
+    background-color: darkblue;
+
 }
 
 h3 {
@@ -89,7 +92,7 @@ p {
     margin-top: 0%;
     color: var(--white);
     text-align: justify;
-    text-justify: inter-word;
+    
     text-indent: 50px;
     line-height: 1.5;
     font-family: system-ui;
@@ -110,7 +113,7 @@ p {
     margin-right: 20px;
  }
 .imgapp1{
-    width: 35%;
+    width: 23.5%;
     float: left;
     border-radius: 50%;
     border: 3px solid var(--white);
@@ -129,7 +132,7 @@ p {
 }
 
 .imgapp2{
-    width: 25%;
+    width: 20%;
     float: right;
     border-radius: 50%;
     border: 3px solid var(--white);
