@@ -23,7 +23,7 @@ header {
     background-color: #010000c2;
     color: var(--white);
     padding: 20px 12px;
-    background-image: url(/assets/images/ormerly-gradienta.jpg);
+    background-image: url(assets/images/ormerly-gradienta.jpg);
 }
 
 header li a {
@@ -55,7 +55,7 @@ main h2 {
     color: var(--tittles);
     text-align: center; 
     margin: 1px;
-    background-image: url(/assets/images/ormerly-gradienta.jpg);
+    background-image: url(assets/images/ormerly-gradienta.jpg);
 }
 
 
@@ -73,7 +73,7 @@ section h2 {
     text-align: center; 
     margin-right: 20px;
     margin-left: 20px;
-    background-image: url(/assets/images/unsplash.jpg);
+    background-image: url(assets/images/unsplash.jpg);
 }
 
 h3 {
