@@ -24,7 +24,7 @@ The Portfolio App is a web application designed to showcase the work and accompl
 
 ## Usage
 
-1. **Access the Portfolio App:** Visit the Portfolio App by clicking on the following link: [Portfolio App](https://your-app-url.com).
+1. **Access the Portfolio App:** Visit the Portfolio App by clicking on the following link: [Portfolio App](https://davidj92.github.io/Professional-Portfolio/).
 
 2. **Navigate the Sections:**
    - Click "About Me" in the navigation menu to learn about David's background and interests.
@@ -33,7 +33,7 @@ The Portfolio App is a web application designed to showcase the work and accompl
 
 ## Screenshots
 
-![Website Img](/assets/images/portfolioimg.png)
+![Website Img](/assets/images/127.0.0.1_5500_index.html%20(2).png)
 
 ## Technologies Used
 
