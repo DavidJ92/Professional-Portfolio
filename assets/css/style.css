@@ -24,7 +24,7 @@ header {
     color: var(--white);
     padding: 20px 12px;
     background-color: navy;
-    background-image: url(/assets/images/pngtree-dark-blue-beam-matte-upscale-gradient-background-bluebeamscrubhigh-gradegradientbackgroundexhibition-board-image_86513.jpg);
+    background-image: url("../images/pngtree-dark-blue-beam-matte-upscale-gradient-background-bluebeamscrubhigh-gradegradientbackgroundexhibition-board-image_86513.jpg");
 }
 
 header li a {
