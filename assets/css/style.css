@@ -92,7 +92,7 @@ h3 {
 
 /* Style the image within the container */
 .image-paragraph-container .imgAvatar {
-    max-width: 25%;
+    max-width: 30%;
     border-radius: 50%;
     border: 3px solid var(--white);
     margin-right: 20px;
@@ -100,7 +100,7 @@ h3 {
 }
 
 .image-paragraph-container .imgapp1{
-    max-width: 23.5%;
+    max-width: 28.5%;
     border-radius: 50%;
     border: 3px solid var(--white);
     margin-right: 20px;
@@ -108,7 +108,7 @@ h3 {
 }
 
 .image-paragraph-container .imgapp2 {
-    width: 26.5%;
+    width: 27.5%;
     border-radius: 50%;
     border: 3px solid var(--white);
     margin-right: 20px;
@@ -117,7 +117,7 @@ h3 {
 
 
 .image-paragraph-container .imgapp3 {
-    width: 22.5%;
+    width: 25.5%;
     border-radius: 50%;
     border: 3px solid var(--white);
     margin-right: 20px;
@@ -163,7 +163,7 @@ h3 {
     margin-bottom: 20px;
  }
 
- .contact-section p{
+ .contact-section p {
     font-size: 20px;
     color: var(--white);
     text-align: justify;
@@ -178,7 +178,6 @@ h3 {
     border: 2px solid var(--white);
     box-shadow: 5px 5px 5px #000000;
     margin: 0; 
-
  }
 
  footer h4 {
