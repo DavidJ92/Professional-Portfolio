@@ -59,10 +59,7 @@ main h2 {
     background-color: skyblue;
     
 }
-
-
-
-    
+   
 section {
     padding: 20px;
 }
@@ -86,13 +83,52 @@ h3 {
     margin: 1px;
 }
 
-p {
+
+/* Style the container for image and paragraph */
+.image-paragraph-container {
+    clear: both; /* Clear floats */
+    margin-bottom: 20px; /* Add space between each container */
+}
+
+/* Style the image within the container */
+.image-paragraph-container .imgAvatar {
+    max-width: 25%;
+    border-radius: 50%;
+    border: 3px solid var(--white);
+    margin-right: 20px;
+    float: left; /* Float the image to the left */
+}
+
+.image-paragraph-container .imgapp1{
+    max-width: 23.5%;
+    border-radius: 50%;
+    border: 3px solid var(--white);
+    margin-right: 20px;
+    float: left; 
+}
+
+.image-paragraph-container .imgapp2 {
+    width: 26.5%;
+    border-radius: 50%;
+    border: 3px solid var(--white);
+    margin-right: 20px;
+    float: right; /* Float the image to the right */
+}
+
+
+.image-paragraph-container .imgapp3 {
+    width: 22.5%;
+    border-radius: 50%;
+    border: 3px solid var(--white);
+    margin-right: 20px;
+    float: left;
+}
+
+/* Style the paragraph within the container */
+.image-paragraph-container p {
     font-size: 20px;
-    margin-bottom: 0%;
-    margin-top: 0%;
     color: var(--white);
     text-align: justify;
-    
     text-indent: 50px;
     line-height: 1.5;
     font-family: system-ui;
@@ -103,46 +139,46 @@ p {
     border-radius: 25px;
     border: 2px solid var(--white);
     box-shadow: 5px 5px 5px #000000;
-    }
+    margin: 0; /* Reset margin to remove default margin */
+}
 
- .imgAvatar {
-    max-width: 25%;
-    float: left;
-    border-radius: 50%;
-    border: 3px solid var(--white);
-    margin-right: 20px;
- }
-.imgapp1{
-    width: 23.5%;
-    float: left;
-    border-radius: 50%;
-    border: 3px solid var(--white);
-    margin-right: 20px;
-    transition: color 1.0s;
-    /*transition-property: transform;
-    transition-duration: 0.5s;
-    transition-timing-function: linear;
-    transition-delay: 0s;
-    trasition:transform: 0.5s;*/
- }
 
 .imgapp1:hover {
-    transform:translate(-10px);
+    transform:translate(10px);
     transition: .5s;
 }
 
-.imgapp2{
-    width: 20%;
-    float: right;
-    border-radius: 50%;
-    border: 3px solid var(--white);
-    margin-right: 20px;
-    transition: color 1.0s;
-    /*transition-property: transform;
-    transition-duration: 0.5s;
-    transition-timing-function: linear;
-    transition-delay: 0s;
-    trasition:transform: 0.5s;*/
+ .imgapp2:hover {
+    transform:translate(-10px);
+    transition: .5s; 
+ }   
+
+ .imgapp3:hover {
+    transform:translate(10px);
+    transition: .5s;   
+ }
+
+ .contact-section {
+    clear: both;
+    margin-bottom: 20px;
+ }
+
+ .contact-section p{
+    font-size: 20px;
+    color: var(--white);
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 1.5;
+    font-family: system-ui;
+    font-style: italic;
+    text-shadow: 2px 2px 4px #000000;
+    background-color: #010000c2;
+    padding: 20px;
+    border-radius: 25px;
+    border: 2px solid var(--white);
+    box-shadow: 5px 5px 5px #000000;
+    margin: 0; 
+
  }
 
  footer h4 {
@@ -161,3 +197,5 @@ p {
         padding: 20px;
     }
     }
+
+    
