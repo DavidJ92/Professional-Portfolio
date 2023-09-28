@@ -108,7 +108,7 @@ h3 {
 }
 
 .image-paragraph-container .imgapp2 {
-    width: 27.5%;
+    width: 28.5%;
     border-radius: 50%;
     border: 3px solid var(--white);
     margin-right: 20px;
@@ -117,11 +117,19 @@ h3 {
 
 
 .image-paragraph-container .imgapp3 {
-    width: 25.5%;
+    width: 26%;
     border-radius: 50%;
     border: 3px solid var(--white);
     margin-right: 20px;
     float: left;
+}
+
+.image-paragraph-container .imgapp4 {
+    width: 28.5%;
+    border-radius: 50%;
+    border: 3px solid var(--white);
+    margin-right: 20px;
+    float: right;
 }
 
 /* Style the paragraph within the container */
@@ -157,6 +165,11 @@ h3 {
     transform:translate(10px);
     transition: .5s;   
  }
+
+.imgapp4:hover {
+    transform:translate(-10px);
+    transition: .5s;   
+}
 
  .contact-section {
     clear: both;

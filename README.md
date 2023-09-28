@@ -33,7 +33,7 @@ The Portfolio App is a web application designed to showcase the work and accompl
 
 ## Screenshots
 
-![Website Img](/assets/images/professional-Portfolioimg_.png)
+![Website Img](/assets/images/portfolio-img.png)
 
 ## Technologies Used
 
