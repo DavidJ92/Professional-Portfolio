@@ -33,14 +33,16 @@ The Portfolio App is a web application designed to showcase the work and accompl
 
 ## Screenshots
 
-![Website Img](/assets/images/portfolio-img.png)
-
+![Website Img](/assets/images/portfolioimg.png)
+![Website Img](/assets/images/portfolioimg2.png)
+![Website Img](/assets/images/portfolioimg3.png)
 ## Technologies Used
 
 This web application was built using the following technologies:
 
 - HTML
 - CSS
+- JavaScript
 ## Author
 
 - **David Jimenez**
