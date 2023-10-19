@@ -1,84 +1,136 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
+    <title>David Jimenez - Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        /* Additional inline styles can be added here if needed */
+    </style>
 </head>
+
+<body>
     <header>
-        <h1>David Jimenez</h1>
-        <nav>
-            <ul>
-                <li><a href="#about me">About Me</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>  
+        <div class="container">
+            <h1>David Jimenez</h1>
+            <div class="dropdown-button">&#9776;</div>
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    
+
     <main>
         <h2>✨¡Visualizing Success!✨</h2>
     </main>
-    <body>
 
-    <section id="about me" class="container">
-      <div class="image-paragraph-container">
-        <h2>About Me</h2>
-        <img class="imgAvatar" src="assets/images/ADB30BA0-B6F7-4578-87CD-04AF1386AD71.JPEG" alt="imgAvatar">
-        <p>I am a dedicated individual with a multifaceted background, always eager to embrace new challenges and explore diverse passions.</p>
-        <p>Bilingual in English and Spanish, I'm currently pursuing a coding bootcamp at the University of Wisconsin, where I'm honing my skills in the world of technology. As a perfectionist, I possess a keen eye for detail and I'm driven by the relentless pursuit of excellence. I'm also a team player, always ready to collaborate with others to achieve a common goal.</p>
-        <p>In addition to my academic endeavors, I have a natural inclination for leadership, thriving when tasked with guiding and inspiring others towards their best potential. Challenging myself is not just a habit but a source of motivation, propelling me to push boundaries and embark on new horizons. Beyond the confines of code and leadership, I'm an avid reader, delving into books that open doors to diverse worlds and perspectives. Dedication is at the core of everything I do; it fuels my passion for coding, music, and every endeavor I undertake.</p>
-        <p>Let's connect and bring our collective expertise to exciting projects that await. Together, we can turn innovative ideas into reality! 🚀</p>
-    </div>
-    </section>
-
-    <section id="work" class="container">
+    <section id="about" class="container">
         <div class="image-paragraph-container">
-            <h2>Work</h2>
-            <h3>Horiseon-Your Digital Solution</h3>
-            <a  href="https://davidj92.github.io/Horiseon-YourDigitalSolution/">
-            <img class="imgapp1" src="assets/images/users_davidjimenezotero_hw_Horiseon-YourDigitalSolution_index.html (1).png" alt="Horiseon img"> </a>
-                <p>Horiseon's website is designed to showcase the company's services and benefits to potential clients. The website provides information about the services offered, including SEO, Online Reputation Management, and Social Media Marketing. It also highlights the benefits of these services, such as lead generation, brand awareness, and cost management.</p>
+            <h2>About Me</h2>
+            <img class="image-paragraph-img" src="assets/images/ADB30BA0-B6F7-4578-87CD-04AF1386AD71.JPEG" alt="imgAvatar">
+
+            <p>I am a dedicated individual with a multifaceted background, always eager to embrace new challenges and explore diverse passions. Bilingual in English and Spanish, I'm currently pursuing a coding bootcamp at the University of Wisconsin, where I'm honing my skills in the world of technology. As a perfectionist, I possess a keen eye for detail and I'm driven by the relentless pursuit of excellence. I'm also a team player, always ready to collaborate with others to achieve a common goal. In addition to my academic endeavors, I have a natural inclination for leadership, thriving when tasked with guiding and inspiring others towards their best potential. Challenging myself is not just a habit but a source of motivation, propelling me to push boundaries and embark on new horizons. Beyond the confines of code and leadership, I'm an avid reader, delving into books that open doors to diverse worlds and perspectives. Dedication is at the core of everything I do; it fuels my passion for coding, music, and every endeavor I undertake. Let's connect and bring our collective expertise to exciting projects that await. Together, we can turn innovative ideas into reality! 🚀</p>
         </div>
     </section>
-
-        <section class="app2">
-            <div class="image-paragraph-container">
-                <h3>CSS Snippets Cheets</h3>
-                <a href="https://davidj92.github.io/CSS-Snippets-Cheets/">
-                <img class="imgapp2" src="assets/images/users_davidjimenezotero_hw_CSS-Snippets-Cheets_starter_index.html (1).png"  alt="CSS-Snippets-Cheets img"></a>
-                <p>This app holds information and examples of CSS Snippets, build for those who are new in to the coding world.</p>
+</main>
+    <section id="portfolio" class="container" style="display: none;">
+        <h2>Portfolio</h2>
+        <div class="work-row">
+            <div class="work-item">
+                <div class="card">
+                    <img class="work-cover-img" src="assets/images/Horiseon-YourDigitalSolution.png" alt="Horiseon Cover">
+                    <div class="card-content">
+                        <h3>Horiseon-Your Digital Solution</h3>
+                        <p>Horiseon's website is designed to showcase the company's services and benefits to potential clients. The website provides information about the services offered, including SEO, Online Reputation Management, and Social Media Marketing. It also highlights the benefits of these services, such as lead generation, brand awareness, and cost management.</p>
+                        <a href="https://davidj92.github.io/Horiseon-YourDigitalSolution/">View Project</a>
+                    </div>
+                </div>
             </div>
-    </section>
+        </main>
+            <div class="work-item">
+                <div class="card">
+                    <img class="work-cover-img" src="assets/images/CSS-Snippets-Cheets.png" alt="CSS Snippets Cover">
+                    <div class="card-content">
+                        <h3>CSS Snippets Cheets</h3>
+                        <p>This app holds information and examples of CSS Snippets, built for those who are new to the coding world.</p>
+                        <a href="https://davidj92.github.io/CSS-Snippets-Cheets/">View Project</a>
+                    </div>
+                </div>
+            </div>
 
-    <section class="app3">
-        <div class="image-paragraph-container">
-            <h3>Password Generator</h3>
-            <a href="https://davidj92.github.io/Password-Generator/">
-            <img class="imgapp3" src="assets/images/password-generator-img_.png" alt="App 3"></a>
-            <p>This app is a simple password generator web application that allows users to generate secure passwords based on their specified criteria. It prompts users for the desired password length and the types of characters (lowercase, uppercase, numeric, and special) they want to include in the password. The generated password is then displayed to the user.</p>
+            <div class="work-item">
+                <div class="card">
+                    <img class="work-cover-img" src="assets/images/Password-Generator.png" alt="CSS Snippets Cover">
+                    <div class="card-content">
+                        <h3>Password-Generator</h3>
+                        <p>This app is a simple password generator web application that allows users to generate secure passwords based on their specified criteria. It prompts users for the desired password length and the types of characters (lowercase, uppercase, numeric, and special) they want to include in the password. The generated password is then displayed to the user.</p>
+                        <a href="https://davidj92.github.io/Password-Generator/">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="card">
+                    <img class="work-cover-img" src="assets/images/Code-Quiz-Challenge.png" alt="CSS Snippets Cover">
+                    <div class="card-content">
+                        <h3>Code Quiz Challenge</h3>
+                        <p>This is a simple coding quiz web application that tests your knowledge of coding fundamentals. Try to answer the questions within the time limit. Incorrect answers will deduct time from your total.</p>
+                        <a href="https://davidj92.github.io/Code-Quiz/">View Project</a>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="work-item">
+                <div class="card">
+                    <img class="work-cover-img" src="assets/images/Work-Day-Planner.png" alt="CSS Snippets Cover">
+                    <div class="card-content">
+                        <h3>Work Day Planner</h3>
+                        <p>This is a simple calendar application that allows users to save events for each hour of the day. This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery.</p>
+                        <a href="https://davidj92.github.io/WorkDay-Planner/">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="card">
+                    <img class="work-cover-img" src="assets/images/WeatherSphere.png" alt="CSS Snippets Cover">
+                    <div class="card-content">
+                        <h3>WeatherSphere</h3>
+                        <p>This is a simple weather dashboard that allows users to search for a city and view the current weather conditions as well as the 5-day forecast. This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery.</p>
+                        <a href="https://davidj92.github.io/WeatherSphere/">View Project</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <section class="app4">
-        <div class="image-paragraph-container">
-            <h3>Code Quiz Challenge</h3>
-            <a href="https://davidj92.github.io/Code-Quiz/">
-            <img class="imgapp4" src="assets/images/code-quiz-img.png" alt="App 4"></a>
-            <p>This is a simple coding quiz web application that tests your knowledge of coding fundamentals. Try to answer the questions within the time limit. Incorrect answers will deduct time from your total.</p>
-        </div>
-    </body>
-
-    <section id="contact" class="container">
-        <div class="contact-section">
-            <h2>Contact</h2>
-            <p>📧Email:📧 davidj1192974@gmail.com</p>
+    <section id="contact" class="section" style="display: none;">
+        <div class="container">
+            <div class="image-paragraph-container">
+                <h2>Contact</h2>
+                <p>📧 Email: davidj1192974@gmail.com</p>
+            </div>
         </div>
     </section>
-        
-     <footer>
+
+    <footer>
         <h4>© 2023 David Jimenez</h4>
-</body>
-</html>
+    </footer>
 
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

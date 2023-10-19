@@ -4,19 +4,20 @@
     --black: #000;
     --gray: #f0f0f0;
     --darkgray: #333;
-    --hover:#ff6600;
-    --tittles: #964b00;
+    --hover: #ff6600;
+    --tittles: #f1861b;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui;
+    background: #000;
+    padding-bottom: 100px;
 }
 
 header {
-    display: flex;
     justify-content: space-between;
     font-size: 20px;
     align-items: center;
@@ -24,115 +25,92 @@ header {
     color: var(--white);
     padding: 20px 12px;
     background-color: navy;
-    background-image: url("../images/pngtree-dark-blue-beam-matte-upscale-gradient-background-bluebeamscrubhigh-gradegradientbackgroundexhibition-board-image_86513.jpg");
+    background-color: #000;
 }
 
-header li a {
-    text-decoration-line: underline;
+header h1 {
+    margin: 0;
+    font-size: 25px;
+    text-align: left;   
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 nav ul {
     list-style-type: none;
+    display: flex;
+    margin-left: auto;
 }
 
-nav ul li {
-    display: inline;
+nav li {
     margin-right: 20px;
+    text-align: left;
 }
 
 nav a {
     color: var(--white);
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: bold;
-    transition: color 1.0s;
+    transition: color 0.5s;
 }
 
 nav a:hover {
-    color:var(--hover);
+    color: var(--hover);
+}
+
+.main-content {
+    padding: 40px;
 }
 
 main h2 {
-    font-size: 30px;
+    font-size: 32px;
     color: var(--tittles);
-    text-align: center; 
-    margin: 0px;
-    background-color: skyblue;
-    
-}
-   
-section {
-    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-
-section h2 {
-    font-size: 30px;
-    font-weight: bold;
-    color:var(--tittles);
-    text-align: center; 
-    margin-right: 20px;
-    margin-left: 20px;
-    background-color: darkblue;
-
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-h3 {
-    font-size: 30px;
-    color:var(--black);
-    text-align: center; 
-    margin: 1px;
+.section {
+    background-color: var(--white);
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
-/* Style the container for image and paragraph */
-.image-paragraph-container {
-    clear: both; /* Clear floats */
-    margin-bottom: 20px; /* Add space between each container */
-}
-
-/* Style the image within the container */
-.image-paragraph-container .imgAvatar {
-    max-width: 30%;
-    border-radius: 50%;
-    border: 3px solid var(--white);
-    margin-right: 20px;
-    float: left; /* Float the image to the left */
-}
-
-.image-paragraph-container .imgapp1{
-    max-width: 28.5%;
-    border-radius: 50%;
-    border: 3px solid var(--white);
-    margin-right: 20px;
-    float: left; 
-}
-
-.image-paragraph-container .imgapp2 {
-    width: 28.5%;
-    border-radius: 50%;
-    border: 3px solid var(--white);
-    margin-right: 20px;
-    float: right; /* Float the image to the right */
-}
-
-
-.image-paragraph-container .imgapp3 {
-    width: 26%;
-    border-radius: 50%;
-    border: 3px solid var(--white);
-    margin-right: 20px;
-    float: left;
-}
-
-.image-paragraph-container .imgapp4 {
-    width: 28.5%;
-    border-radius: 50%;
-    border: 3px solid var(--white);
-    margin-right: 20px;
+.image-paragraph-container img {
+    display: flex;
     float: right;
 }
 
-/* Style the paragraph within the container */
+img.image-paragraph-img {
+    border-radius: 45%;
+    margin-right: 20px;
+    max-width: 30%;
+    border-style: groove;
+}
+
+.image-paragraph-container h2 {
+    font-size: 32px;
+    color: var(--tittles);
+    margin-bottom: 10px;
+}
+
+#portfolio h2 {
+    font-size: 32px;
+    color: var(--tittles);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .image-paragraph-container p {
     font-size: 20px;
     color: var(--white);
@@ -147,67 +125,177 @@ h3 {
     border-radius: 25px;
     border: 2px solid var(--white);
     box-shadow: 5px 5px 5px #000000;
-    margin: 0; /* Reset margin to remove default margin */
+    margin: 0;
 }
 
-
-.imgapp1:hover {
-    transform:translate(10px);
-    transition: .5s;
+.work-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
- .imgapp2:hover {
-    transform:translate(-10px);
-    transition: .5s; 
- }   
-
- .imgapp3:hover {
-    transform:translate(10px);
-    transition: .5s;   
- }
-
-.imgapp4:hover {
-    transform:translate(-10px);
-    transition: .5s;   
+.work-item {
+    width: 40%;
+    margin-bottom: 40px;
 }
 
- .contact-section {
-    clear: both;
-    margin-bottom: 20px;
- }
+.work-item h3 {
+    font-size: 24px;
+    color: var(--tittles);
+    margin-bottom: 10px;
+}
 
- .contact-section p {
-    font-size: 20px;
-    color: var(--white);
-    text-align: justify;
-    text-indent: 50px;
+.work-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.work-item p {
+    font-size: 16px;
     line-height: 1.5;
-    font-family: system-ui;
-    font-style: italic;
-    text-shadow: 2px 2px 4px #000000;
-    background-color: #010000c2;
-    padding: 20px;
-    border-radius: 25px;
-    border: 2px solid var(--white);
-    box-shadow: 5px 5px 5px #000000;
-    margin: 0; 
- }
+    color: var(--white) !important;
+}
 
- footer h4 {
-    font-size: 20px;
-    color: var(--black);
-    text-align: center; 
-    margin: 1px;
- }
-        
+#contact {
+    background-color: var(--black);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    display: none;
+}
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 /* Responsive design */
 @media screen and (max-width: 768px) {
-
     header {
         flex-direction: column;
         align-items: center;
-        padding: 20px;
-    }
     }
 
-    
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .image-paragraph-container .work-item {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+
+    .work-item {
+        width: 100%;
+    }
+}
+
+/* Additional styles for cards */
+.card {
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card .work-cover-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    color: var(--tittles);
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+
+.card-content a {
+    color: var(--hover);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.5s;
+}
+
+.card-content a:hover {
+    color: var(--tittles);
+}
+
+/* Add a CSS media query to target smaller screens */
+@media screen and (max-width: 480px) {
+    main h2 {
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+}
+
+/* Additional styles for the dropdown menu */
+.dropdown-button {
+    display: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    color: var(--white);
+}
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.nav-container.show {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown-button {
+        display: block;
+        margin-left: auto;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-container.show ul {
+        display: flex;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
