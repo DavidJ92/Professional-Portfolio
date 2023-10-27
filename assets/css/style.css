@@ -98,6 +98,27 @@ img.image-paragraph-img {
     border-style: groove;
 }
 
+
+.image-paragraph-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+}
+
+.image-paragraph-container1 i {
+    font-size: 60px; /* Set the icon size */
+    margin-right: 20px; /* Add some spacing between icons */
+    margin-bottom: 10px; /* Add spacing between lines */
+}
+        
+.image-paragraph-container1 h2 {
+    font-size: 32px;
+     color: var(--tittles);
+     margin-bottom: 10px;   
+}
+
 .image-paragraph-container h2 {
     font-size: 32px;
     color: var(--tittles);
