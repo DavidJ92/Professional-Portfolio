@@ -42,3 +42,34 @@ var navContainer = document.querySelector('.nav-container');
 dropdownButton.addEventListener('click', function() {
     navContainer.classList.toggle('show');
 });
+
+// JavaScript code to toggle night mode and change button icon
+const nightModeToggleBtn = document.getElementById('nightModeToggleBtn');
+const body = document.body;
+
+// Check user preference from localStorage or system settings
+const isNightMode = localStorage.getItem('nightMode') === 'enabled';
+
+// Apply night mode styles and set button icon based on user preference
+if (isNightMode) {
+    body.classList.add('night-mode');
+    nightModeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>'; // Moon icon for night mode
+} else {
+    body.classList.remove('night-mode');
+    nightModeToggleBtn.innerHTML = '<i class="far fa-moon"></i>'; // Moon icon for day mode
+}
+
+// Toggle night mode and change button icon on button click
+nightModeToggleBtn.addEventListener('click', function() {
+    if (body.classList.contains('night-mode')) {
+        // If night mode is currently active, switch to day mode
+        body.classList.remove('night-mode');
+        localStorage.setItem('nightMode', 'disabled');
+        nightModeToggleBtn.innerHTML = '<i class="far fa-moon"></i>'; // Moon icon for night mode
+    } else {
+        // If day mode is currently active, switch to night mode
+        body.classList.add('night-mode');
+        localStorage.setItem('nightMode', 'enabled');
+        nightModeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>'; // Moon icon for day mode
+    }
+});
