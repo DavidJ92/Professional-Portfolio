@@ -1,7 +1,7 @@
 /* Reset some default styles */
 :root {
     --white: #fff;
-    --black: #000;
+    --black:  #131a22;
     --gray: #f0f0f0;
     --darkgray: #333;
     --hover: #ff6600;
@@ -13,7 +13,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui;
-    background: #000;
+    background: var(--black);
     padding-bottom: 100px;
 }
 
@@ -21,11 +21,10 @@ header {
     justify-content: space-between;
     font-size: 20px;
     align-items: center;
-    background-color: #010000c2;
+    background-color: var(--black);
     color: var(--white);
     padding: 20px 12px;
-    background-color: navy;
-    background-color: #000;
+    
 }
 
 header h1 {
@@ -76,6 +75,7 @@ main h2 {
 .container {
     width: 80%;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .section {
@@ -104,7 +104,7 @@ img.image-paragraph-img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 35vh;
+    height: 16vh;
 }
 
 .image-paragraph-container1 i {
@@ -141,10 +141,10 @@ img.image-paragraph-img {
     font-family: system-ui;
     font-style: italic;
     text-shadow: 2px 2px 4px #000000;
-    background-color: #010000c2;
+    background-color: var(--black);
     padding: 20px;
     border-radius: 25px;
-    border: 2px solid var(--white);
+    
     box-shadow: 5px 5px 5px #000000;
     margin: 0;
 }
@@ -320,3 +320,112 @@ footer {
         margin: 10px 0;
     }
 }
+
+/* Additional CSS for contact section */
+#contact {
+    background-color: var(--black);
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the height of the contact section to cover the viewport */
+    margin: 0; /* Remove any margin */
+}
+
+#contact h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: var(--tittles);
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 20px); /* Adjust width for smaller screens */
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Increase margin-bottom to create space between input fields */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: var(--black);
+}
+
+
+button {
+    background-color: var(--tittles);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    width: 38%; /* Make the button fill the entire width of its container */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Align input fields and labels in a column */
+    width: 100%; /* Make the form group fill the entire width of its container */
+    color: var(--tittles);
+}
+
+.form-group label {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-icons {
+    display: flex;
+    margin-top: 20px; /* Add margin at the top of contact icons */
+}
+
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust container width for smaller screens */
+    }
+
+    .work-item {
+        width: 100%; /* Make work items fill the entire width */
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: calc(100% - 40px); /* Adjust width for smaller screens */
+    }
+
+    button {
+        width: 45%; /* Adjust button width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%; /* Further adjust container width for even smaller screens */
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: calc(100% - 20px); /* Further adjust width for even smaller screens */
+    }
+
+    button {
+        width: 50%; /* Further adjust button width for even smaller screens */
+    }
+
+    .work-item h3 {
+        font-size: 20px; /* Decrease heading font size for smaller screens */
+    }
+
+    .contact-icons a {
+        font-size: 10px; /* Further reduce font size of contact icons for even smaller screens */
+        margin-right: 3px; /* Add minimal space between icons */
+    }
+}
+

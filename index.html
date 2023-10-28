@@ -125,21 +125,37 @@
     <section id="contact" class="section" style="display: none;">
         <div class="container">
             <div class="image-paragraph-container1">
-                <h2></h2>
-                
-                <a href="mailto:davidj1192974@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/david-jimenez-980490298" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/DavidJ92" target="_blank"><i class="fa-brands fa-github"></i></a>
-
+                <h2>Contact</h2>
+                <div class="contact-icons">
+                    <a href="mailto:davidj1192974@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/david-jimenez-980490298" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/DavidJ92" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
             </div>
+    
+            <form id="contact-form" action="https://formspree.io/f/mjvqllzw" method="POST">
+                <div class="form-group">
+                    <label for="name"><i class="fa-solid fa-user"></i></label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fa-solid fa-envelope"></i></label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message"><i class="fa-solid fa-comment"></i></label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                </div>
+                <button type="submit" id="submit-button">Submit</button>
+            </form>
         </div>
     </section>
-
+    
     <footer>
         <h4>© 2023 David Jimenez</h4>
     </footer>
-
     <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
+
