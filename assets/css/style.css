@@ -218,6 +218,12 @@ img.image-paragraph-img {
     color: var(--white) !important;
 }
 
+#more-projects p {
+    text-align: center;
+    color: var(--tittles);
+
+}   
+
 #contact {
     background-color: var(--black);
     padding: 30px;
