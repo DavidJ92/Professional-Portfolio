@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | David Jimenez - Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <!-- Include the CSS for the navbar -->
+    <style>
+        /* Style for the transparent navbar */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: transparent;
+            z-index: 1000; /* Ensure the navbar appears above other content */
+        }
+
+        /* Remove padding from the body */
+        body {
+            padding: 0;
+            margin: 0; /* Remove default margin */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Include the navbar -->
+    <header>
+        <div class="container">
+            <div class="dropdown-button">&#9776;</div>
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="/home.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#technologies">Technologies</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="landing-page">
+        <!-- Background image -->
+        <img src="./assets/images/homeimg.jpg" alt="Background Image" id="background-img">
+
+        <!-- Welcome info -->
+        <div id="welcome-info">
+            <h1>David Jimenez - Otero</h1>
+            <p>I am a passionate <span class="emphasis">Web Developer</span> ready to turn your ideas into reality.🚀</p>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="image-gallery">
+                <img src="./assets/images/pr-img.jpeg" alt="Self Image 1" class="gallery-image">
+                <img src="./assets/images/gym-img.jpeg" alt="Self Image 2" class="gallery-image">
+                <img src="./assets/images/setup-img.jpg" alt="Self Image 3" class="gallery-image">
+            </div>
+            <p>Embarking on my coding journey through online courses, including those from the University of Wisconsin,
+                my journey into development has been a blend of skills, personal growth, and sheer determination. 
+                From the shores of Puerto Rico, I've embraced coding not just as a career, but as a canvas for creativity and problem-solving.
+            </p>
+            <p>Fueled by a passion for challenge and a knack for taking responsibility, I've found coding to be the perfect outlet for my ambitions. 
+                Each line of code represents an opportunity to innovate, to push boundaries, and to make a difference.
+            </p>
+            <p>Beyond the screen, I'm a voracious reader and a nature enthusiast, finding inspiration in the world around me.
+                It's this eclectic mix of experiences and perspectives that shapes my approach to development, making every project an adventure.
+            </p>
+            <p>If you're looking for a developer who brings more than just technical expertise to the table, 
+                someone who sees coding as both an art and a science, then I'm your match.
+                Let's collaborate and bring your ideas to life in ways you never thought possible.
+            </p>
+        </div>
+    </section>
+
+    <section id="technologies">
+        <div class="container">
+            <h2>Technologies</h2>
+            <div class="icon-grid">
+                <!-- HTML Icon -->
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#E44D26" width="48px" height="48px">
+                        <path d="M12 2a10 10 0 00-2 .256A10 10 0 002 12h2a8 8 0 018-8zm6.5 6H17v8h-2v-4H9v4H7v-8H5.5a7.5 7.5 0 010-15h13a7.5 7.5 0 010 15z"/>
+                    </svg>
+                    <span>HTML</span>
+                </div>
+    
+                <!-- CSS Icon -->
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1572B6" width="48px" height="48px">
+                        <path d="M2 2h20v20H2zm0 0h20v20H2z"/>
+                        <path fill="#fff" d="M4 4.02h16V20H4z"/>
+                        <path fill="#fff" d="M10 17.293l-3.707-3.707L5.586 15.3 12 21.707l6.414-6.414-1.707-1.707L12 18.293z"/>
+                    </svg>
+                    <span>CSS</span>
+                </div>
+    
+                <!-- JavaScript Icon -->
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F7DF1E" width="48px" height="48px">
+                        <path d="M12 2a10 10 0 00-2 .256A10 10 0 002 12h2a8 8 0 018-8zm6.5 6H17v8h-2v-4H9v4H7v-8H5.5a7.5 7.5 0 010-15h13a7.5 7.5 0 010 15z"/>
+                    </svg>
+                    <span>JavaScript</span>
+                </div>
+    
+                <!-- React.js Icon -->
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="48px" height="48px">
+                        <path fill="#61DAFB" d="M127.52 72.56c0 1.27-.05 2.54-.15 3.81-.44 8.52-3.1 16.5-7.57 23.72-9.15 14.61-24.74 24.93-42.78 27.48-17.68 2.51-33.92-3.58-45.77-14.94-12.84-12.12-19.53-28.35-19.15-45.63.33-15.64 6.43-31.3 17.75-42.56C33.95 6.17 49.72.94 67.33.49 84.13.03 100.53 6.5 113.4 18.85c9.63 9.46 15.14 21.62 15.68 34.7.05 1.26.07 2.52.08 3.78zm-25.94-.1c0-1.84-.08-3.67-.23-5.5-1.11-18.45-10.55-34.52-25.88-45.27C72.67 8.97 48.77 6.1 28.44 17.7 11.85 27.15 4.21 45.26 4.06 63.84c-.15 17.48 6.54 34.08 18.79 46.72 11.7 12.8 27.21 19.69 44.08 19.95 14.67.24 27.57-4.2 38.42-13.46 9.35-8.01 15.07-18.7 16.3-30.94.1-1.27.16-2.55.18-3.84.02-7.53-3.63-14.74-9.84-20.08-6.72-5.65-15.67-9.06-25.3-9.08-4.18-.01-8.35.62-12.45 1.89-7.64 2.31-14.51 6.74-19.88 13.17-.67.79-1.32 1.6-1.94 2.42-2.08 2.71-4.09 5.46-5.99 8.26-7.56 11.35-12.25 24.83-13.61 38.83-.07.67-.11 1.35-.12 2.03-.01 1.87.24 3.71.72 5.51 1.1 4.47 3.36 8.65 6.72 12.17 3.72 4.07 8.49 7.02 13.86 8.66 4.34 1.3 8.72 1.95 13.13 1.94 4.8 0 9.51-.81 14.12-2.44 8.63-3.16 16.35-8.7 22.88-16.4 2.46-3.01 4.72-6.16 6.78-9.41.65-.99 1.28-2 1.89-3.01 1.33-2.14 2.6-4.3 3.79-6.49 2.34-4.23 3.89-8.67 4.57-13.26.14-.99.23-1.99.27-2.99z"/>
+                    </svg>
+                    <span>React.js</span>
+                </div>
+    
+                <!-- AngularJS Icon -->
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="48px" height="48px">
+                        <path fill="#B52E31" d="M40.6 27.8h47.9l-6.5 14.6h-35z"/>
+                        <path fill="#DD1B16" d="M64 114.1l37.3-102H26.7L64 114.1zM27.2 27.8L0 114.1h54.4L64 90.1 27.2 27.8z"/>
+                        <path fill="#C3002F" d="M62.4 62.3h-20.9l-2.5 6.9h23.4z"/>
+                        <path fill="#DD1B16" d="M64 63.6L43.5 86.6H40l20.9-56.8h3.4L84 86.6h-3.5z"/>
+                    </svg>
+                    <span>AngularJS</span>
+                </div>
+    
+                <!-- Vue.js Icon -->
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="48px" height="48px">
+                        <path fill="#4FC08D" d="M64 11.9L2.8 116.5h122.4z"/>
+                        <path fill="#34495E" d="M64 11.9L9 103.8h31.4L64 73.8 87.6 103.8H119z"/>
+                        <path fill="#2C3E50" d="M64 11.9L2.8 116.5h30.2L64 73.8 87.6 116.5h30.2L64 11.9z"/>
+                    </svg>
+                    <span>Vue.js</span>
+                </div>
+    
+                <!-- Node.js Icon -->
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="48px" height="48px">
+                        <path fill="#83CD29" d="M64 11.6C29.1 11.6 0 39.5 0 76s29.1 64.4 64 64.4 64-28 64-64.4-29.1-64.4-64-64.4zm0 121.9c-33.4 0-60.5-27.1-60.5-61s27.1-61 60.5-61 60.5 27.1 60.5 61-27.1 61-60.5 61z"/>
+                        <path fill="#34495E" d="M64 14.7c-31.4 0-56.9 25.5-56.9 56.9s25.5 56.9 56.9 56.9 56.9-25.5 56.9-56.9-25.5-56.9-56.9-56.9zm0 106c-28.5 0-51.6-23.1-51.6-51.6S35.5 17.5 64 17.5s51.6 23.1 51.6 51.6-23.1 51.6-51.6 51.6zM64 60c-3.3 0-6 2.7-6 6v15c0 3.3 2.7 6 6 6s6-2.7 6-6v-15c0-3.3-2.7-6-6-6zm0 21c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z"/>
+                    </svg>
+                    <span>Node.js</span>
+                </div>
+    
+                <!-- Express.js Icon -->
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000" width="48px" height="48px">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path fill="#000000" d="M12.03 2.03c-6.63 0-10.97 4.14-11.99 10.97 1.08 7.08 5.36 11.99 11.99 11.99 6.63 0 10.97-4.14 11.99-10.97-1.08-7.08-5.36-11.99-11.99-11.99zm-.03 18.06c-3.31 0-5.99-2.69-5.99-5.99s2.68-5.99 5.99-5.99 5.99 2.69 5.99 5.99-2.68 5.99-5.99 5.99zM9.99 9.03h4v6h-4v-6z"/>
+                    </svg>
+                    <span>Express.js</span>
+                </div>
+    
+                <!-- MongoDB Icon -->
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="48px" height="48px">
+                        <path fill="#3FA037" d="M0 0v128h128V0H0zM71.407 59.63c0-15.625-9.867-19.042-13.056-19.042-3.188 0-3.188 0-3.188.501v37.695c0 1.562.314 2.188 1.377 2.188 1.377 0 5.47-.188 7.002-1.377 1.501-1.064 2.314-3.128 2.314-7.002zm-.939-19.934v-12.939c0-1.377-.5-2.003-2.064-2.003-2.314 0-7.815 1.377-11.814 4.564L45.27 38.867c-.751.627-1.251 1.564-1.251 3.126v32.062c0 1.064.25 2.064 1.377 2.064 1.314 0 4.064-1.002 6.627-3.065l8.378-6.313c3.689-2.689 7.189-6.376 7.189-13.628zm56.527 39.566l-.002-.002-8.874-27.75c-1.814-5.753-3.313-10.377-5.128-14.376-.938-2.439-2.314-4.376-4.376-5.565-1.877-1.064-4.064-1.877-6.751-1.877-4.877 0-9.502 2.627-15.064 8.376v-8.189c0-2.064-.751-2.815-2.689-2.815H61.17c-2.064 0-2.815.751-2.815 2.815v41.693c0 1.877.751 2.564 2.689 2.564h7.002c2.064 0 2.689-.751 2.689-2.689V75.629c2.315-4.564 4.064-7.627 6.939-10.127 1.689-1.5 3.252-2.251 5.502-2.251 1.877 0 3.564.563 5.064 1.688 1.689 1.063 2.939 2.814 4.064 5.314 2.064 4.002 3.376 9.627 3.376 16.627v19.127c0 2.064.564 2.814 2.502 2.814h7.002c2.064 0 2.689-.75 2.689-2.814v-.188-.002z"/>
+                    </svg>
+                    <span>MongoDB</span>
+                </div>
+    
+                <!-- MySQL Icon -->
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="48px" height="48px">
+                        <path fill="#4479A1" d="M0 0h128v128H0z"/>
+                        <path fill="#FFFFFF" d="M40.96 76.667V51.44l35.84 12.107v25.224zM64 79.84l35.84-12.107V51.44L64 63.547zM87.04 76.667l10.667-3.627v-7.253L87.04 69.44zm-69.333 0l-10.667-3.627v-7.253L17.707 69.44zM64 86.08l-23.253-7.68-6.827 1.707-6.827-1.707L0 88.213v7.253l8-2.453v15.573l10.667 3.627v-7.253l6.827-1.707 6.827 1.707L64 109.907l23.253 7.68 6.827-1.707 6.827 1.707 8-2.453v-7.253l-8 2.453v-15.573l-10.667-3.627v7.253l-6.827 1.707-6.827-1.707zm-23.253 4.96v7.253l10.667 3.627v-7.253L40.96 91.04zm46.507 3.627v7.253l10.667-3.627v-7.253L87.04 91.04z"/>
+                    </svg>
+                    <span>MySQL</span>
+                </div>
+    
+                <!-- PostgreSQL Icon -->
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="48px" height="48px">
+                        <path fill="#336791" d="M0 0h128v128H0z"/>
+                        <path fill="#336791" d="M64 64l-31.807 63.615h63.614L64 64zM50.342 59.993l-6.342 12.686h12.686zM67.658 59.993H80.34l6.343 12.686zM63.621 57.31L76.342 32h-47.48L63.621 57.31zm-17.343 17.346L32 76.342v-47.48l13.278 25.036zM93.658 76.342l10.65-19.036 13.271 25.036h-23.92zm6.686-16.33h12.671l6.343-12.672-18.014-.015zm-29.057-.015L50.656 40.976H37.985l-6.343-12.672zm0 33.323l-6.343 12.686h12.686z"/>
+                    </svg>
+                    <span>PostgreSQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Hero section -->
+<section id="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Explore my latest projects and creations</p>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio section -->
+<section id="portfolio">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="portfolio-grid">
+            <!-- Portfolio Item 1 -->
+            <div class="portfolio-item">
+                <div class="portfolio-item-img">
+                    <img src="assets/images/Horiseon-YourDigitalSolution.png" alt="Horiseon-Your Digital Solution">
+                    <div class="overlay">
+                        <a href="https://davidj92.github.io/Horiseon-YourDigitalSolution/" class="view-project-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item-content">
+                    <h3>Horiseon-Your Digital Solution</h3>
+                    <p>Horiseon's website is designed to showcase the company's services and benefits to potential clients. The website provides information about the services offered, including SEO, Online Reputation Management, and Social Media Marketing. It also highlights the benefits of these services, such as lead generation, brand awareness, and cost management.</p>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 2 -->
+            <div class="portfolio-item">
+                <div class="portfolio-item-img">
+                    <img src="assets/images/mooodvie-generator.png" alt="MOODVIE-Generator">
+                    <div class="overlay">
+                        <a href="https://bxiong34.github.io/moodvie-generator/index.html" class="view-project-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item-content">
+                    <h3>MOODVIE-Generator</h3>
+                    <p>Moodvie Generator is a delightful web application that helps you discover movies based on your mood. Whether you're feeling happy, sad, excited, or anything in between, Moodvie Generator curates a selection of movies tailored to your emotions.</p>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 3 -->
+            <div class="portfolio-item">
+                <div class="portfolio-item-img">
+                    <img src="assets/images/CSS-Snippets-Cheets.png" alt="CSS Snippets Cheets">
+                    <div class="overlay">
+                        <a href="https://davidj92.github.io/CSS-Snippets-Cheets/" class="view-project-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item-content">
+                    <h3>CSS Snippets Cheets</h3>
+                    <p>This app holds information and examples of CSS Snippets, built for those who are new to the coding world.</p>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 4 -->
+            <div class="portfolio-item">
+                <div class="portfolio-item-img">
+                    <img src="assets/images/Password-Generator.png" alt="Password Generator">
+                    <div class="overlay">
+                        <a href="https://davidj92.github.io/Password-Generator/" class="view-project-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item-content">
+                    <h3>Password Generator</h3>
+                    <p>This app is a simple password generator web application that allows users to generate secure passwords based on their specified criteria. It prompts users for the desired password length and the types of characters they want to include in the password.</p>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 5 -->
+            <div class="portfolio-item">
+                <div class="portfolio-item-img">
+                    <img src="assets/images/Code-Quiz-Challenge.png" alt="Code Quiz Challenge">
+                    <div class="overlay">
+                        <a href="https://davidj92.github.io/Code-Quiz/" class="view-project-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item-content">
+                    <h3>Code Quiz Challenge</h3>
+                    <p>This is a simple coding quiz web application that tests your knowledge of coding fundamentals. Try to answer the questions within the time limit. Incorrect answers will deduct time from your total.</p>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 6 -->
+            <div class="portfolio-item">
+                <div class="portfolio-item-img">
+                    <img src="assets/images/Work-Day-Planner.png" alt="Work Day Planner">
+                    <div class="overlay">
+                        <a href="https://davidj92.github.io/WorkDay-Planner/" class="view-project-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item-content">
+                    <h3>Work Day Planner</h3>
+                    <p>This is a simple calendar application that allows users to save events for each hour of the day. This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery.</p>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 7 -->
+            <div class="portfolio-item">
+                <div class="portfolio-item-img">
+                    <img src="assets/images/WeatherSphere.png" alt="WeatherSphere">
+                    <div class="overlay">
+                        <a href="https://davidj92.github.io/WeatherSphere/" class="view-project-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item-content">
+                    <h3>WeatherSphere</h3>
+                    <p>This is a simple weather dashboard that allows users to search for a city and view the current weather conditions as well as the 5-day forecast. This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery.</p>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 8 -->
+            <div class="portfolio-item">
+                <div class="portfolio-item-img">
+                    <img src="assets/images/UrbanShinePRO-Auto-Detailing_.png" alt="UrbanShinePRO Auto Detailing">
+                    <div class="overlay">
+                        <a href="https://davidj92.github.io/UrbanShinePRO-Auto-Detailing/" class="view-project-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item-content">
+                    <h3>UrbanShinePRO Auto Detailing</h3>
+                    <p>UrbanShinePRO Auto Detailing is a web application offering comprehensive services for car cleaning, maintenance, and detailing. Leveraging a modern tech stack, the platform seamlessly integrates frontend technologies such as HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 9 -->
+            <div class="portfolio-item">
+                <div class="portfolio-item-img">
+                    <img src="assets/images/itblog.png" alt="IT-Blog">
+                    <div class="overlay">
+                        <a href="https://github.com/DavidJ92/IT-Blog" class="view-project-btn">View Github Repo</a>
+                    </div>
+                </div>
+                <div class="portfolio-item-content">
+                    <h3>IT-Blog</h3>
+                    <p>This application allows users to create and engage with tech-related content. Users can store, comment on, edit, and delete posts via the dashboard. The homepage displays all posts, but accessing the dashboard or specific posts requires login or account creation. User authentication ensures secure access using session storage, cookies, and hashed passwords.</p>
+                    <p>The platform seamlessly integrates frontend and backend technologies such as NodeJS, Express.js, JavaScript, MySQL, NPM Sequelize, Nodemon, Bootstrap, and Jest Insomnia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Have a project in mind or just want to chat? Feel free to reach out by email📧 at <span class="highlight">davidj1192974@gmail.com</span> or using the form below.</p>
+        <div class="contact-form">
+            <form id="contact-form" action="https://formspree.io/f/mjvqllzw" method="POST">
+                <div class="form-group">
+                    <input type="text" id="name" name="name"  required>
+                    <label for="name"><i class="fa-solid fa-user"></i>Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email"  required>
+                    <label for="email"><i class="fa-solid fa-envelope"></i>Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message"  rows="6" required></textarea>
+                    <label for="message"><i class="fa-solid fa-comment"></i>Message</label>
+                </div>
+                <button type="submit" id="submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <p>© 2024 <span class="fusion">Dave<span class="overlap">loper</span></span><span class="rights">All rights reserved.</span></p>
+    </div>
+</footer>
+
+
+    
+
+    <!-- Cursor line -->
+    <div class="cursor-line"></div>
+
+    <!-- Font Awesome CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+
+
+</html>

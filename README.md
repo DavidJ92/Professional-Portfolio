@@ -27,21 +27,19 @@ The Portfolio App is a web application designed to showcase the work and accompl
 1. **Access the Portfolio App:** Visit the Portfolio App by clicking on the following link: [Portfolio App](https://davidj92.github.io/Professional-Portfolio/).
 
 2. **Navigate the Sections:**
-   - Click "About Me" in the navigation menu to learn about David's background and interests.
-   - Explore the "Work" section to view David's projects. Click on project titles or images to access more details and the deployed applications.
-   - To get in touch with David, click "Contact Me" and send an email to [davidj1192974@gmail.com](mailto:davidj1192974@gmail.com).
+   - Click "About Me" in the navigation menu to learn about background and interests.
+   - Explore the "Work" section to view projects. Click on project titles or images to access more details and the deployed applications.
+   - To get in touch, click "Contact Me" and send an email to [davidj1192974@gmail.com](mailto:davidj1192974@gmail.com).
 
 ## Screenshots
 
 ![Website Img](/assets/images/portfolioimg.png)
-![Website Img](/assets/images/portfolioimg2.png)
-![Website Img](/assets/images/portfolioimg3.png)
 ## Technologies Used
 
 This web application was built using the following technologies:
 
-- HTML
-- CSS
+- HTML5
+- CSS3
 - JavaScript
 ## Author
 
