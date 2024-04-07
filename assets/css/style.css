@@ -70,15 +70,23 @@ header.scrolled {
 
 /* Background image */
 #background-img {
-    position: absolute; /* Position absolutely relative to the landing page container */
+    position: absolute;/* Position absolutely relative to the landing page container */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Cover the entire container without stretching or cropping */
+    background-size: cover; /* Cover the entire container without stretching or cropping */
     z-index: -1;
     filter: grayscale(0.5); /* Apply grayscale effect */
 }
+
+@media (min-aspect-ratio: 16/9) {
+    #background-img {
+        height: 100%;
+        width: auto;
+    }
+}
+
 
 /* Welcome info */
 #welcome-info {
